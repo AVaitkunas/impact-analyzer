@@ -1,9 +1,6 @@
-import os
-import re
 from pathlib import Path
-from typing import Iterator, Optional
 
-from utils.search import get_files,  function_dependency_data
+from utils.search import get_files, function_dependency_data
 
 if __name__ == '__main__':
     files = get_files(directory=Path(), exclude=["venv", "tests", ".pytest_cache", ".idea"])

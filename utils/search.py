@@ -3,7 +3,6 @@ import os
 from _ast import AST
 from pathlib import Path
 from typing import Optional, Iterator, List, Tuple
-from collections import deque
 
 
 def get_files(directory: Path, extension: str = ".py", exclude: Optional[List[str]] = None) -> Iterator[Path]:
